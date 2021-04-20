@@ -5,13 +5,15 @@ Last Modified: April 6th, 2021 */
 /*Formatting*/
 
 body {
-    background-color:#e3cea7;
+    background-color:#D5D8D4;
     font-family: "Century Gothic", "CenturyGothic", "AppleGothic", "sans-serif";
     }
     
     .h1 {
       color:	#7dc5b8;
       font-size: large;
+      text-align: center;
+      margin:auto
     }
     
     .h2 {
@@ -70,20 +72,13 @@ body {
 
     /*Bootstrap containers Source: https://www.youtube.com/watch?v=UeHdHsYDggc */
     
-    .col-sm-4 {
-      background-color: #C09F80;
-      padding:10px;
-      align-items:center;
-    }
-    
-    .col-md-4 {
-      background-color: #C09F80;
+
+    .col-md-8 {
       padding:10px;
       align-items: center;
       }
     
-    .col-md-6 {
-      background-color: #114211;
+    .col-md-4 {
       padding:25px;
       align-items: center;
       }
@@ -93,8 +88,9 @@ body {
     
     /*Responsive Navigation Bar */
     .topnav {
+      align-items: center;
       overflow: hidden;
-      background-color: #54a59f;
+      background-color: #696C3F;
     }
     
     .topnav a {
@@ -108,13 +104,14 @@ body {
     }
     
     .topnav a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
-      background-color: white;
-      color: black;
+      background-color: #A2AC94;
+      color: #7B643E;
     }
     
     .topnav a.active {
-      background-color:#9be5d4;
-      color: black;
+      background-color:#A2AC94;
+      color: #7B643E;
+      font-weight: bold;
     }
     
     .topnav .icon {
@@ -123,7 +120,7 @@ body {
     
     .topnav-right {
       float: right;
-      background-color: #54a59f;
+      background-color: #7B643E;
     }
     
     
@@ -145,16 +142,25 @@ body {
     
     .container-fluid {
         width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
+        background-color: #729B9E;
+
         margin-right: auto;
-      margin-left: auto;
+        margin-left: auto;
     }
     .row {
       display: flex;
       flex-wrap: wrap;
       margin-right: -15px;
       margin-left: -15px;
+      background-color: #7B643E
+    }
+
+    .row2 {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      background-color: #729B9E
     }
     
     h3 {
