@@ -142,3 +142,27 @@ body {
       background-color: #696C3F
     }
     
+
+  /* Additional CSS for Process Page */  
+    .ProcessParagraphWhite {
+      color:white;
+    }
+    
+    .ProcessParagraph{
+      padding-bottom: 30px;
+    }
+
+    .rowBlue {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      background-color: #6b918a;
+    }
+
+    .rowGrey {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
