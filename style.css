@@ -10,7 +10,7 @@ body {
     }
     
     .h1 {
-      color:	#7dc5b8;
+      color:	#568b82;
       font-size: large;
       text-align: center;
       margin:auto
@@ -35,22 +35,11 @@ body {
     }
     
     .p2 {
-      font-size: smaller;
+      font-size: small;
       color: white;
       }
     
-    .p3 {
-    font-size: small;
-    color:white;
-    text-align: center;
-    padding-top:25px;
-    }
-    .p4 {
-      font-size: small;
-      color:white;
-      padding-bottom:25px;
-      font-style: italic;
-    }
+
     
     /*paragraph structuring to keep centre, 
     inspired by https://www.orbitmedia.com/blog/web-design-tips/ */
@@ -67,11 +56,9 @@ body {
       max-width:100%;
       height: auto;
     }
-      
-    
+
 
     /*Bootstrap containers Source: https://www.youtube.com/watch?v=UeHdHsYDggc */
-    
 
     .col-md-8 {
       padding:10px;
@@ -124,26 +111,9 @@ body {
     }
     
     
-    /*Team Photo */
-    #Team {
-      max-width: 100%;
-      height: auto;
-      border-radius: 6px;
-    }
-    
-    .TeamMember {
-      width: 100%;
-      max-width: 250px;
-      height: 100%;
-      max-height: 210px;
-      border-radius: 40%;
-      display: inline;
-    }
-    
     .container-fluid {
         width: 100%;
-        background-color: #729B9E;
-
+        padding-top:10px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -152,7 +122,8 @@ body {
       flex-wrap: wrap;
       margin-right: -15px;
       margin-left: -15px;
-      background-color: #7B643E
+      background-color: #7B643E;
+
     }
 
     .row2 {
@@ -160,9 +131,14 @@ body {
       flex-wrap: wrap;
       margin-right: -15px;
       margin-left: -15px;
-      background-color: #729B9E
+      background-color: #6b918a
+    }
+
+    .row3 {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      background-color: #696C3F
     }
     
-    h3 {
-      text-align: center;
-    }
