@@ -149,7 +149,7 @@ body {
     }
     
     .ProcessParagraph{
-      padding-bottom: 30px;
+      padding-bottom: 15px;
     }
 
     .rowBlue {
@@ -165,4 +165,8 @@ body {
       flex-wrap: wrap;
       margin-right: -15px;
       margin-left: -15px;
+    }
+
+    .caption {
+      padding-top:15px;
     }
