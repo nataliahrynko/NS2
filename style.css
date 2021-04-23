@@ -9,29 +9,40 @@ body {
     font-family: "Century Gothic", "CenturyGothic", "AppleGothic", "sans-serif";
     }
     
-    .h1 {
-      color:	#568b82;
+    .title{
       font-size: large;
-      text-align: center;
-      margin:auto
-    }
-    
-    .h2 {
-      font-size: medium;
-      color:	#7dc5b8;
-    }
-    
-    .h4 {
-      font-size:medium;
-      color:white;
       font-weight: bold;
-      }
-      
-    .p1 {
+    }
+
+    .rowh {
+      color:white;
+      font-size: medium;
+      text-align: center;
+      margin:auto;
+      font-weight: bold;
+    }
+    
+    .rowp {
       font-size: small;
-      color: black;
-      padding-top:10px;
-      padding-bottom:10px;
+      color:	white;
+    }
+
+    .rowa{
+      font-size:small;
+      font-weight: bold;
+      color:white;
+      text-align: left;
+    }
+    
+    .row2h {
+      font-size: medium;
+      text-align: center;
+      margin:auto;
+      font-weight: bold;
+    }
+    
+    .row2p {
+      font-size: small;
     }
     
     .p2 {
