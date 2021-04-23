@@ -3,7 +3,7 @@
 
 <!-- Group 4 Web Design (GEOM99)-->
 <!-- Created by: Sarah Griffiths, Natalia Hrynko, Shane Minor-->
-<!-- Last Modified: April 6th, 2021-->
+<!-- Last Modified: April 21st, 2021-->
 
 <head>
 <!-- Bootstrap Source: https://getbootstrap.com/docs/3.4/getting-started/-->
@@ -26,47 +26,224 @@
   <!-- Navbar begins-->
   <!-- Source: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp-->
   <div class="topnav" id="myTopnav">
-    <a href="problem.html" >The Problem</a>
-    <a href="team.html" >The Team</a>    
+    <a href="problem.html" >The Problem</a>   
     <a href="proposal.html" class="active">The Process</a>
     <a href="solution.html">The Solution</a>
+    <a href="team.html" >The Team</a> 
   </div>
 
   <!--Writing Begins-->
   <div class= "text">
+
+
     <div class = "container">
       <h2>The Process</h2> 
-      <p>Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque. 
-        Enim nec dui nunc mattis enim ut tellus elementum. Ullamcorper sit amet risus 
-        nullam. Amet cursus sit amet dictum sit. Quam vulputate dignissim suspendisse
-         in est. At quis risus sed vulputate. Accumsan sit amet nulla facilisi. Sit amet
-          aliquam id diam. Mollis nunc sed id semper risus in hendrerit gravida rutrum. 
-          Orci sagittis eu volutpat odio. Posuere morbi leo urna molestie. Risus nullam 
-          eget felis eget. Massa sapien faucibus et molestie ac. Sed blandit libero 
-          volutpat sed cras ornare. Nunc sed augue lacus viverra vitae. In nibh mauris
-           cursus mattis molestie. Sapien eget mi proin sed libero. Pretium viverra 
-           suspendisse potenti nullam ac.</p>
+      <p class="ProcessParagraph">Our users, as cottage owners, may not have access to desktop computers which meant we needed software 
+        that would work well on tablets and mobile. We needed something that would be easy to modify for smaller screens and required 
+        minimal coding. We needed to be able to teach and provide information but not make it overly GIS focused or technically difficult 
+        as our users will likely not have this training. This was our process to the final solution.</p>
     </div>
+
+
     <div class="container-fluid">
+      <h2>Data Acquisition and Software Selection</h2> 
       <div class="row">
         <div class="col-md-4">
-          <h2>STUFF</h2>
+          <p class="ProcessParagraphWhite">In 2013 the Ontario Ministry of Natural Resources and Forestry (OMNRF, previously OMNR) 
+            reclassified and inventoried the shoreline at Lake Simcoe. The data, along with a methodology 
+            report was published in 2015. The data and report were provided to us by Silvia Strobl (Regional 
+            Operations Division, OMNRF). The shoreline inventory data consisted of 4 feature classes: Shoreline,
+             Shoreline Structures, Near-Shore Features, and Outfalls.</p>
+          <p class="ProcessParagraphWhite">We decided to explore ESRI software for this solution as ESRI has a number of community engagement
+             and narrative applications. These feature classes were uploaded in a geodatabase to ArcGIS online 
+             and shared as a hosted feature layer. The hosted feature layer was then opened in Map View Beta and 
+             the first iteration of a web map was developed.</p>
         </div>
         <div class="col-md-8">
-          <h2>STUFF</h2>
+          <img class="picture" src="images/FirstWebMap.png" alt="First Web Map from NS2" width="1880" height="912">
         </div>
       </div>
-      <div class="row2">
+</div>
+
+
+<div class="container-fluid">
+        <h2>ESRI Exploration and Rapid Builds</h2>
+        <p class="ProcessParagraph">To assess the most appropriate means of communicating the necessary information to solve our 
+          problem, we explored WebApp Builder, Dashboards, StoryMaps, and Experience Builder. As our users were not the GIS community, 
+          having something completely data driven was not appropriate for our solution, thus Dashboards was eliminated. While we wanted 
+          a guide experience to help teach the public on shoreline alterations, we wanted to maintain some freedom for users to explore 
+          data as they desired, thus we eliminated StoryMaps. WebApp Builder was also eleminated as it did not have the narrative 
+          capbilities we were looking for. While exploring the various applications, Sarah tried Experience Builder and used a pre-made 
+          template to explore the available functionality. Having shared her findings with the group, Experience Builder was chosen as 
+          it combined the narrative aspect of Story Maps and the map-focused aspect of WebApp Builder. Another desirable aspect of 
+          Experience Builder was that it was easy to manipulate the Experience for tablet and mobile. </p>
+          <p class="ProcessParagraph">Using the initial webmap created for our application exploration, we each produced a rapid build Experience. 
+            Apart from the initial trial run performed by Sarah during the various application investigates, no confering 
+            took place until we met to share our creations. [Right-click to view each image to view in full screen.]</p>
+           <div class="row4">
+            <div class="col-md-4">
+              <p class="caption">Journey Template</p>
+              <img class="picture" src="images/SarahRapid1.png" alt="Sarah's Rapid Build Image 1" width="1920" height="915">
+              <img class="picture" src="images/SarahRapid2.png" alt="Sarah's Rapid Build Image 2" width="1917" height="915">
+              <p class="caption">Sarah selected to use a template for her rapid build. She selected Journey which uses the bookmark 
+                widget and a map to provide an interactive tour experience. The idea was to show an overview of Lake 
+                Simcoe with an overview of the project and its importance. The user would then be taken on a tour of 
+                classifications identified in the study. The bookmark could be timed to automatically take the user on
+                 the tour and the last bookmark would explain to the user how to use the map to find their own properties 
+                 and explore the area, having learned about the different shoreline features.</p>
+            </div>
+            <div class="col-md-4">
+              <p class="caption">Custom Journey Template</p>
+              <img class="picture" src="images/ShaneRapid1.png" alt="Shane's Rapid Build Image 1" width="1919" height="913">
+              <img class="picture" src="images/ShaneRapid2.png" alt="Shane's Rapid Build Image 2" width="1918" height="910">
+              <p class="caption">Shane chose to build a custom layout for his rapid build. He modelled his after the Journey template that 
+                Sarah used, with some major alterations. This prototype was intended to experiment with the overall design of the app and 
+                the interactivity between widgets. The primary goal for this prototype was to contain the bookmarks in a scrollable box within 
+                a collapsible sidebar. When a bookmark was clicked, the intended behaviour was for the photo and text widgets below to change 
+                according to the selected bookmark. However, the Experience Builder is not capable of this without (possibly) custom 
+                enhancements. This design was abandoned for a more simple bookmark widget, like Sarah’s template.</p>
+            </div>
+            <div class="col-md-4">
+              <p class="caption">Custom Template</p>
+              <img class="picture" src="images/NatRapid1.png" alt="Natalia's Rapid Build Image 1" width="1918" height="912">
+              <img class="picture" src="images/NatRapid2.png" alt="Natalia's Rapid Build Image 2" width="1918" height="915">
+              <p class="caption">Natalia...</p>
+            </div>
+          </div>
+          <p class="ProcessParagraph">Completing our own builds allowed us all to explore what Experience Builder had to offer, 
+            both positive and negative. The downside to using a blank layout that widgets were added to was that it wasn't immediately 
+            set up for smaller screens. Both Shane and Natalia had issues with their layouts when the smaller screen sizes were selected. 
+            A downside to using Experience Builder was that there was limitations to what was possible as there was rigidity in the widget 
+            design. The Header widget was applied globally across the three screen sizes. The font size and icons used in the Desktop version 
+            applied to the Mobile version; while you could resize the icons you could not resize the text and if you deleted an icon, it would 
+            be deleted from all three version (e.g. the menu icon).</p>
+          <p class="ProcessParagraph">In the end, we decided that a layout modelled after the Journey template would be the best option, 
+            but that we would re-design it from a blank template. One aspect that we hadn't quite figured out was how to best instruct the 
+            user how to use the map and the Experience. We wanted a pop-up like feature that would display when the Experience opened, but we 
+            discovered it would require custom programming. We also liked the increased ability to tell information that Natalia's version 
+            created but we were not sure how to integrate it.</p>
+        </div>
+
+      <div class="container-fluid">
+        <h2>Two Page Experience</h2> 
+        <div class="row2">
+          <div class="col-md-4">
+            <p class="ProcessTextWhite">We decided to combine the Teaching Text aspect of Natalia's build with Sarah's Bookmark Tour to make an Experience that 
+              had two pages. The first page would explain the background necessary to understand the data and the second page would house 
+              the map with the shoreline feature tour. Natalia produced two versions for us to compare.</p> 
+              <p class="ProcessTextWhite"> Between the two options, we preferred the look and feel of the scrollable home page. We choice it 
+                because it would feel more familiar to users as it operated like a traditional website. A scrolling template seemed 
+                to be more inuitive and also require less engagement with the user. Clicking on cards to reveal information involves 
+                active viewership and we need to encourage as much participation as possible. The scrolling screen is less involved 
+                and may encourage users to actually read the content as images and text would be immediately displayed.</p>
+                <p class="ProcessTextWhite">In the end, however, we felt too constrained by Experience Builders widgets and format. 
+                  Shawn adviced us to explore ArcGIS Hub in place of using a two page experience.</p> 
+          </div>
+          <div class="col-md-4">
+            <p class="caption">Fixed Home Page</p>
+            <img class="picture" src="images/V1TwoPage1.png" alt="Version One of Two Page Experience Intro Page" width="1916" height="908">
+            <img class="picture" src="images/V1TwoPage2.png" alt="Version One of Two Page Experience Map Page" width="1914" height="910">
+                  <p class="caption">This version used a fixed template that would provide information on shoreline alterations and their 
+                    significance. This would be done by Cards that can be clicked on to expand. On the second page instructions would be 
+                    placed in a collapsible side bar that would provide details to uses on how to use the map.
+                  </p>
+          </div>
+          <div class="col-md-4">
+            <p class="caption">Scrolling Home Page</p>
+            <img class="picture" src="images/V2TwoPage1.png" alt="Version Two of Two Page Experience Intro Page Top" width="1914" height="912">
+            <img class="picture" src="images/V2TwoPage2.png" alt="Version Two of Two Page Experience Intro Page Bottom" width="1918" height="912">
+                <p class="caption">This version used a scrolling template that would provide information on shoreline alterations and their significance
+                   in a more traditional format for a website. The second page in this version employed the Journey template version Sarah created but 
+                   replicated from a custom blank template.</p>
+          </div>
+        </div>
+
+    <div class="container-fluid">
+      <h2>Enter: Hub</h2>
+      <div class="row4">
         <div class="col-md-4">
-          <h2>STUFF</h2>
+          <img class="picture" src="images/DevHubOverview.png" alt="First Web Map from NS2" width="598" height="792">
         </div>
         <div class="col-md-4">
-          <h2>STUFF</h2>
+          <p>As we felt constrained with only using Experience Builder for our Solution, we moved to using ArcGIS Hub 
+            in conjunction with Experience Builder. ArcGIS Hub operates like a website but comes as a configurable app. 
+            Using Hub would allow us to put as much information as was necessary to educate the property owners without 
+            having to clutter one long scrolling page.</p>
+          <p>While exploring the functionality of Hub, Sarah created a number of Hubs using premade templates on her developer 
+            account. From the four contenders, we settled on the template Outdoor Recreation and created a colour palette that would 
+            suite the feel of the shoreline project better. When creating a Hub from a template, many ArcGIS Online items are created 
+            as well. While many of the additional items created to support the template would have been incredibly useful in community 
+            engagement efforts (such as the community events, statistics summaries, and surveys), we knew we didn't have the time or 
+            means to properly populate these features. In the future, however, these aspects would be a great benefit to a solution 
+            solving a similar problem.
+          </p>
         </div>
         <div class="col-md-4">
-          <h2>STUFF</h2>
+          <img class="picture" src="images/DevHubTemplate1.png" alt="Hub Template Section 1" width="1918" height="912">
+          <img class="picture" src="images/DevHubTemplate2.png" alt="Hub Template Section 2" width="1920" height="912">
+          <img class="picture" src="images/DevHubTemplate3.png" alt="Hub Template Section 3" width="1920" height="915">
+          <img class="picture" src="images/DevHubTemplate4.png" alt="Hub Template Section 4" width="1916" height="902">
         </div>
       </div>
     </div>
+    </div>
+
+    <div class="container-fluid">
+      <h2>Template to ?Solution</h2> 
+      <div class="row">
+        <div class="col-md-8">
+          <img class="picture" src="images/GLWebMap.png" alt="Great Lakes Watershed Web Map" width="1530" height="898">
+        </div>
+        <div class="col-md-4">
+          <p class="ProcessParagraphWhite">After cleaning up the Hub items, we removed the pre-made additional pages that the 
+            Hub template generated on created. To supplement the information that the Experience was going to tell, we needed to create 
+            additional features to display across our three pages.</p>
+          <p class="ProcessParagraphWhite">Rather than reuse the web map that was being used in the Experience, a new web map was created 
+            that could tell the broader story on shoreline importance. We wanted to work from broad to specific, as one might with an 
+            introduction paragraph, moving from broad on the first page through to specific on the third where our Experience link was housed. 
+            The Experience was being used to show the results of the Lake Simcoe study while the Hub explained the significance of shorelines as 
+            well as what alterations are and why they are bad.</p>
+          </div>
+
+      </div>
+</div>
+
+
+<div class="container-fluid">
+  <h2>Experience V2 & V3</h2>
+  <div class="row4">
+    <div class="col-md-4">
+      <p class="caption">Experience Version 2</p>
+      <img class="picture" src="images/V2Experience1.png" alt="Experience Version 2 Legend Screen" width="1920" height="915">
+      <img class="picture" src="images/V2Experience2.png" alt="Experience Version 2 Bookmark Screen" width="1916" height="912"> 
+<p>TEXT</p>
+    </div>
+<div class="col-md-4">
+  <p>The primary goal of Version 2 was to design a cleaner and simpler version of Sarah’s prototype based on the Journey template whilst implementing 
+    features from Shane’s prototype template (namely the sidebar). This version was designed around the navigation buttons at the bottom of the 
+    sidebar. The intent was to activate a new bookmark with each button (except for the Legend button, which opened the legend). However, this 
+    was beyond the basic functionality of the Experience Builder as activating a button would only make the bookmark appear, but not activate it. 
+    This version did, however, serve as an excellent template for Version 3 and the Version 4 (the finalized version).</p>
+  <p>Version 3 was refined from Version 2 with Experience Builder’s limitations in mind. The buttons now simply toggled between the legend and the 
+    bookmarks, with each bookmark being accessed and activated by clicking the ‘next’ arrow within the widget. Further adjustments and refinements were 
+    made to the Web Map, including better symbology and basemap switching from ESRI Topographic to ESRI World Imagery (Clarity) at 1:10,000 scale. 
+    Finally, the theme of the application was adjusted to match the colour palette of the ArcGIS Hub that had been built prior to this version. The 
+    main pitfalls of this version were its lack of tablet/mobile device support and minor issues with the buttons’ response to window size.</p>
+</div>
+<div class="col-md-4">
+  <p class="caption">Experience Version 3</p>
+  <img class="picture" src="images/V3Experience1.png" alt="Experience Version 3 Legend Screen" width="1913" height="915">
+  <img class="picture" src="images/V3Experience2.png" alt="Experience Version 3 Bookmark Home Screen" width="1919" height="915">
+  <img class="picture" src="images/V3Experience3.png" alt="Experience Version 3 Bookmark Beach Screen" width="1919" height="915">
+</div>
+  </div>
+</div>
+</div>
+
+    <div class="container-fluid">
+      <div class="row3">
+        <h2></h2>
+        </div>
+        </div>
 </body>
 </html>

@@ -142,3 +142,32 @@ body {
       background-color: #696C3F
     }
     
+    .row4 {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+  /* Additional CSS for Process Page */  
+    .ProcessParagraphWhite {
+      color:white;
+    }
+
+    .ProcessParagraph{
+      padding-bottom: 15px;
+    }
+
+    .caption {
+      padding-top:15px;
+    }
+
+  /* Additional CSS for Problem Page */
+    #ProblemParagraph {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    #ProblemBullets {
+      text-align: left;
+    }
