@@ -14,6 +14,10 @@ body {
       font-weight: bold;
     }
 
+    .rown{
+      padding: 10px;
+      font-weight: bold;
+    }
     .rowh {
       color:white;
       font-size: medium;
@@ -44,11 +48,6 @@ body {
     .row2p {
       font-size: small;
     }
-    
-    .p2 {
-      font-size: small;
-      color: white;
-      }
     
     .header {
       top: 0px;
