@@ -8,11 +8,6 @@ body {
     background-color:#D5D8D4;
     font-family: "Century Gothic", "CenturyGothic", "AppleGothic", "sans-serif";
     }
-    
-    .title{
-      font-size: large;
-      font-weight: bold;
-    }
 
     .rown{
       padding: 10px;
@@ -23,11 +18,13 @@ body {
       text-align: center;
       margin:auto;
       font-weight: bold;
+
     }
     
     .rowp {
       font-size: small;
       color:	white;
+      padding:10px
     }
 
     .rowa{
@@ -35,17 +32,6 @@ body {
       font-weight: bold;
       color:white;
       text-align: left;
-    }
-    
-    .row2h {
-      font-size: medium;
-      text-align: center;
-      margin:auto;
-      font-weight: bold;
-    }
-    
-    .row2p {
-      font-size: small;
     }
     
     .header {
@@ -61,7 +47,6 @@ body {
         margin:auto;
       }
       
-    
     /*image formatting*/
 
     .picture {
@@ -80,13 +65,9 @@ body {
       padding:25px;
       align-items: center;
       }
-    .column {
-      background-color: #C09F80;
-    }
-    
+
     /*Responsive Navigation Bar */
       .topnav {
-
         width: 100%;
         text-align: center;
         display: flex;
