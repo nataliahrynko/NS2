@@ -48,6 +48,8 @@ body {
       }
       
     /*image formatting*/
+    .banner { width: 100%;
+      height: auto}
 
     .picture {
       max-width:100%;
