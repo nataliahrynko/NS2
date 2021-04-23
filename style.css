@@ -161,3 +161,9 @@ body {
     .caption {
       padding-top:15px;
     }
+
+  /* Additional CSS for Problem Page */
+    #ProblemParagraph {
+      padding-left: 30%;
+      padding-right: 30%;
+    }
