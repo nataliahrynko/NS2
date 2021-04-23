@@ -207,7 +207,7 @@ body {
       margin-left: -15px;
     }
 
-  /* Additional CSS for Process Page */  
+  /* Additional CSS for Process/Team Page */  
     .ProcessParagraphWhite {
       color:white;
     }
@@ -220,6 +220,12 @@ body {
       padding-top:15px;
     }
 
+    .TeamParagraph{
+      padding-bottom: 15px;
+      padding-left: 10%;
+      padding-right: 10%;
+      text-align: left;
+    }
   /* Additional CSS for Problem Page */
     #ProblemParagraph {
       padding-left: 10%;
