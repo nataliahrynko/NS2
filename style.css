@@ -205,3 +205,12 @@ body {
       padding-left: 10%;
       padding-right: 10%;
     }
+
+    /* footer formatting based on https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+    .footer {
+      position: fixed;
+      padding-top:10px;
+      margin-right: auto;
+      margin-left: auto;
+      width: 100%;
+    }
