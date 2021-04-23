@@ -1,6 +1,6 @@
 /* Group 4 Web Design (GEOM99)
 Created by: Sarah Griffiths, Natalia Hrynko, Shane Minor
-Last Modified: April 6th, 2021 */
+Last Modified: April 23rd, 2021 */
 
 /*Formatting*/
 
@@ -86,88 +86,83 @@ body {
     }
     
     /*Responsive Navigation Bar */
-    .topnav {
+      .topnav {
 
-      width: 100%;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #696C3F;
-
-    }
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #696C3F;
     
-    .topnav a {
-      float: left;
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-      align-items: center;
-      justify-content: center;
-    }
+      }
     
-    .topnav a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
-      background-color: #A2AC94;
-      color: #7B643E;
-    }
-    
-    .topnav a.active {
-      background-color:#A2AC94;
-      color: #7B643E;
-      font-weight: bold;
-    }
-    
-    .topnav .icon {
-      display: none;
-    }
-    
-        
-        /* Dropdown Element of Navbar
-    Adapted from: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
-
-    .dropdown {
-      float: left;
-      overflow: hidden;
-      /* position: relative;
-      display: inline-block; */
-    }
-
-    .dropdown .dropbtn {
-      font-size: 17px;
-      border: none;
-      outline: none;
-      color: white;
-      padding: 14px 16px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: relative;
-      background-color: #696C3F;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-
-    .dropdown-content a {
-      float: none;
-      display: block;
-      color: white;
-      text-align: left;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
+      .topnav a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+  
+      .topnav a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
+        background-color: #A2AC94;
+        color: #7B643E;
+      }
+      
+      .topnav a.active {
+        background-color:#A2AC94;
+        color: #7B643E;
+        font-weight: bold;
+      }
+      
+      .topnav .icon {
+        display: none;
+      }
+      
+          
+          /* Dropdown Element of Navbar
+      Adapted from: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+      .dropdown .dropbtn {
+        font-size: 17px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+  
+      .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: #696C3F;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+  
+      .dropdown-content a {
+        float: none;
+        display: block;
+        color: white;
+        text-align: left;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+  
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
     
     .container-fluid {
         width: 100%;
