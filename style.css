@@ -39,7 +39,10 @@ body {
       color: white;
       }
     
-
+    .header {
+      top: 0px;
+      bottom: 0px;
+    }
     
     /*paragraph structuring to keep centre, 
     inspired by https://www.orbitmedia.com/blog/web-design-tips/ */
@@ -56,7 +59,6 @@ body {
       max-width:100%;
       height: auto;
     }
-
 
     /*Bootstrap containers Source: https://www.youtube.com/watch?v=UeHdHsYDggc */
 
@@ -75,9 +77,14 @@ body {
     
     /*Responsive Navigation Bar */
     .topnav {
+
+      width: 100%;
+      text-align: center;
+      display: flex;
       align-items: center;
-      overflow: hidden;
+      justify-content: center;
       background-color: #696C3F;
+
     }
     
     .topnav a {
@@ -88,6 +95,8 @@ body {
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
+      align-items: center;
+      justify-content: center;
     }
     
     .topnav a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
@@ -105,10 +114,6 @@ body {
       display: none;
     }
     
-    .topnav-right {
-      float: right;
-      background-color: #7B643E;
-    }
         
         /* Dropdown Element of Navbar
     Adapted from: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
@@ -134,7 +139,7 @@ body {
     .dropdown-content {
       display: none;
       position: relative;
-      background-color: #565656;
+      background-color: #696C3F;
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
