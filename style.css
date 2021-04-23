@@ -211,6 +211,7 @@ body {
       position: fixed;
       left: 0;
       bottom: 0;
-      padding-top:10px;
+      padding-top: 100px;
       width: 100%;
+      text-align: center;
     }
