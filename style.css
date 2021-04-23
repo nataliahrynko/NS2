@@ -166,5 +166,8 @@ body {
     #ProblemParagraph {
       padding-left: 10%;
       padding-right: 10%;
+    }
+
+    #ProblemBullets {
       text-align: left;
     }
